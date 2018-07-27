@@ -9,10 +9,10 @@ import { environment } from '../../../../environments/environment';
       {{environment.appName}} Dashboard by <b><a href="https://www.tresipunt.com/" target="_blank">3iPunt</a></b> 2018
     </span>
     <div class="socials">
-      <a [href]="environment.myGithub" target="_blank" class="ion ion-social-github"></a>
-      <a [href]="environment.myFacebook" target="_blank" class="ion ion-social-facebook"></a>
-      <a [href]="environment.myTwitter" target="_blank" class="ion ion-social-twitter"></a>
-      <a [href]="environment.myLinkedin" target="_blank" class="ion ion-social-linkedin"></a>
+      <a *ngIf="environment.myGithub" [href]="environment.myGithub" target="_blank" class="ion ion-social-github"></a>
+      <a *ngIf="environment.myFacebook" [href]="environment.myFacebook" target="_blank" class="ion ion-social-facebook"></a>
+      <a *ngIf="environment.myTwitter" [href]="environment.myTwitter" target="_blank" class="ion ion-social-twitter"></a>
+      <a *ngIf="environment.myLinkedin" [href]="environment.myLinkedin" target="_blank" class="ion ion-social-linkedin"></a>
     </div>
   `,
 })
